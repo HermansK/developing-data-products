@@ -1,0 +1,42 @@
+---
+title: "Developing data products \n final assignment"
+author: "Kimberly Hermans"
+date: "June 14, 2016"
+output: ioslides_presentation
+---
+
+## Assignment
+
+1. Create a Shiny application and deploy it on Rstudio's servers. Following included:
+    + Some form of input (widget: textbox, radio button, checkbox, ...)
+    + Some operation on the ui input in sever.R
+    + Some reactive output displayed as a result of server calculations
+
+2. Prepare a reproducible pitch presentation about your application in Slidify. Following included:
+    + 5 slides
+    + Hosted on Github or Rpubs
+    + Contains embedded R code
+
+## Created application
+
+*'The application should give users a better understanding about the distribution of their numeric data. The most common visualisation to do so is via histograms.'*
+
+
+
+## Example of visualisations
+
+You can upload any txt or csv file and select a column you wish to explore. An example of a histogram obtained in the shiny app is the following:
+
+```{r, echo=FALSE}
+data(cars)
+hist(cars$speed, col="orange")
+```
+
+## Match with assignment
+- **reactive**: the bins can be adjusted
+- **input**: you can upload files, adjust csv settings and select columns
+- **operation**: the application will read the data and create a histogram
+- **slides**: this presentation only contains 5 slides
+- **r chunk**: the histogram on the previous slide was created via a r chunk
+
+
